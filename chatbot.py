@@ -86,6 +86,7 @@ from flask import Flask, request, jsonify, render_template_string
 import pandas as pd
 
 app = Flask(__name__)
+app.run(host = '0.0.0.0' , port = 5000)
 
 # Load dataset
 df = pd.read_csv("Disease_symptom_and_patient_profile_dataset.csv")  # Replace with your filename
